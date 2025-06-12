@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Basic App Information -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+    <key>CFBundleDisplayName</key>
+    <string>HabitSpace</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    
+    <!-- Required Device Capabilities -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+        <string>arkit</string>
+    </array>
+    
+    <!-- Privacy Usage Descriptions -->
+    <key>NSCameraUsageDescription</key>
+    <string>HabitSpace needs camera access to place AR habit anchors in your space and detect when you're near them.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>HabitSpace uses your location to detect when you're near your habit anchors and send relevant reminders.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>HabitSpace uses your location to detect when you're near your habit anchors, even when the app is in the background.</string>
+    <key>NSUserNotificationsUsageDescription</key>
+    <string>HabitSpace sends notifications when you're near habit anchors to remind you of your habits.</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>HabitSpace can integrate with your health data to provide more personalized habit suggestions.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>HabitSpace can record completed habits as health activities when appropriate.</string>
+    
+    <!-- Background Modes -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+        <string>processing</string>
+    </array>
+    
+    <!-- App Configuration -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    
+    <!-- Interface Orientation Support -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+    </dict>
+    
+    <!-- visionOS Support -->
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
+    <key>NSHandsTrackingUsageDescription</key>
+    <string>HabitSpace uses hand tracking to allow you to interact with habit anchors in your space.</string>
+    <key>NSWorldSensingUsageDescription</key>
+    <string>HabitSpace uses world sensing to place and detect habit anchors in your environment.</string>
+    <key>UIApplicationPreferredDefaultSceneSessionRole</key>
+    <string>UIWindowSceneSessionRoleApplication</string>
+    
+    <!-- AR Configuration -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_habitspace-ar._tcp</string>
+    </array>
+    <key>ARKitDisableEyeGazeTracking</key>
+    <false/>
+    
+    <!-- Appearance -->
+    <key>UIUserInterfaceStyle</key>
+    <string>Automatic</string>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <true/>
+    
+    <!-- Capabilities -->
+    <key>UIFileSharingEnabled</key>
+    <false/>
+    <key>LSSupportsOpeningDocumentsInPlace</key>
+    <false/>
+</dict>
+</plist>
